@@ -1,0 +1,73 @@
+from tkinter import *
+
+
+
+
+class LateNightSlicesApp:
+    def __init__(self, master):
+        # this is the title for the main page
+        master.title("Late Night Slices")
+
+    
+    
+
+       
+            
+    
+        
+        # this create the title for the app
+        message_label = Label(master, text="WELCOME, To late Night Slices")
+        message_label.pack()
+        
+        # create a button to start a new order
+        ingredients_button = Button(master, text="Start a new order", command=self.view_manual)
+        ingredients_button.pack()
+
+        
+        # create a button to view the summary
+        create_button = Button(master, text="Summary", command=self.add_ingredient)
+        create_button.pack()
+        
+        # create a button to view tyhe checkout 
+        manual_button = Button(master, text="Checkout", command=self.open_manual)
+        manual_button.pack()
+        
+    def view_manual(self):
+        # create the main window
+        view_manual_window = Toplevel()
+        view_manual_window.title("What would you like to order?")
+
+    
+        
+        # add content to the order summary window
+        
+    def add_ingredient(self):
+        # create the order summary window
+        add_ingredient_window = Toplevel()
+        add_ingredient_window.title("Your order summary")
+        
+        # add content to the checkout window
+        
+    def open_manual(self):
+        # create the checkout window
+        manual_window = Toplevel()
+        manual_window.title("Checkout total")
+        
+        
+
+    def add_image():
+
+        global my_image
+        my_image = PhotoImage(File="desktop/Late1.png")
+        my_text.image_create(END, image=my_image)
+
+        
+        
+# create the main window
+root = Tk()
+
+# create the LateNightSlices object
+app = LateNightSlicesApp(root)
+
+# start the main loop
+root.mainloop()
